@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ink: #030407;
+    --color-cobalt: #1558C9;
+    --color-accent: #D4FF24;
+    --color-cream: #F6F1E7;
+    --color-marigold: #C98A2E;
+    --font-serif: 'Instrument Serif', Georgia, serif;
+    --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+    --font-hand: 'Caveat', cursive;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #F6F1E7;
+    color: #030407;
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #F6F1E7;
+    color: #030407;
+    font-family: var(--font-sans);
+  }
+}
+
+.font-serif-display {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.outline-serif {
+  font-family: 'Instrument Serif', Georgia, serif;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(246, 241, 231, 0.72);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
